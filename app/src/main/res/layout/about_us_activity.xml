@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs_Activity">
+
+    <RelativeLayout
+        android:id="@+id/relative_Layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="14dp"
+            android:src="@drawable/list_icon" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:padding="14dp"
+            android:src="@drawable/bell_icon" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/AboutUsBanner"
+        android:layout_width="318dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/about_us_banner" />
+
+    <TextView
+        android:id="@+id/userTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AboutUsBanner" />
+
+    <TextView
+        android:id="@+id/aboutUsDis1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:text="Entrepreneurs gain new skills and access to new markets where they can turn their dreams and ideas into business success."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userTXT" />
+
+    <TextView
+        android:id="@+id/aboutUsDis2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Our work is a constant evolution, yet we are optimistic for what lies ahead. This is a future we can help shape as we strive to lead the way forward as partners with our global community. Together, we can affect real change."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsDis1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsDis2"
+        >
+
+        <ImageView
+            android:id="@+id/fbIcon"
+            android:layout_width="64px"
+            android:layout_height="120px"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/fb_icon" />
+
+        <ImageView
+            android:id="@+id/InstagramIcon"
+            android:layout_width="64px"
+            android:layout_height="120px"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/instagram_icon" />
+
+        <ImageView
+            android:id="@+id/gmailIcon"
+            android:layout_width="64px"
+            android:layout_height="120px"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/gmail_icon" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/thankTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank You !"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsDis2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shops_Activity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative_Layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="14dp"
+                android:src="@drawable/list_icon" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:padding="14dp"
+                android:src="@drawable/bell_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_Layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/relative_Layout1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="14dp"
+                android:src="@drawable/profile_icon1" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:padding="14dp"
+                android:src="@drawable/cart_icon1" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/SearchView_dashboard"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/search_view_background"
+                app:iconifiedByDefault="false"
+                app:queryHint="Search" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/button_background_green1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.953">
+
+                <TextView
+                    android:id="@+id/categoryTXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categorys"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_Shop1"
+            android:layout_margin="6dp"
+            android:background="@drawable/round_bk2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Chama Computers"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:padding="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <Button
+                android:id="@+id/about_shopBTN1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="20dp"
+                android:text="About Shop"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black">
+            </Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif-black"
+                android:padding="20dp"
+                android:text="Visit Now"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/computer_icon">
+            </ImageView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_margin="6dp"
+            android:background="@drawable/round_bk5"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="MSK Computers"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:padding="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <Button
+                android:id="@+id/about_shopBTN2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="20dp"
+                android:text="About Shop"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black">
+            </Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif-black"
+                android:padding="20dp"
+                android:text="Visit Now"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/computer_icon">
+            </ImageView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_margin="6dp"
+            android:background="@drawable/round_bk2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="E Star Mobiles"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:padding="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <Button
+                android:id="@+id/about_shopBTN3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="20dp"
+                android:text="About Shop"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black">
+            </Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif-black"
+                android:padding="20dp"
+                android:text="Visit Now"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/smart_phone_icon">
+            </ImageView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_margin="6dp"
+            android:background="@drawable/round_bk5"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Family Foods"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:padding="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <Button
+                android:id="@+id/about_shopBTN4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="20dp"
+                android:text="About Shop"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black">
+            </Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif-black"
+                android:padding="20dp"
+                android:text="Visit Now"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/foods_icon">
+            </ImageView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
